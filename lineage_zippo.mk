@@ -6,6 +6,15 @@
 
 $(call inherit-product, device/lenovo/zippo/device.mk)
 
+# Matrixx
+MATRIXX_BUILD_TYPE := Official
+MATRIXX_MAINTAINER := EinarG.
+MATRIXX_CHIPSET := SM8150
+MATRIXX_BATTERY := 4000mAh
+MATRIXX_DISPLAY := 1080x2340
+WITH_GMS := true
+TARGET_HAS_UDFPS := true
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
